@@ -54,10 +54,6 @@ void MarkovSide::GenerateFrom(unsigned int length, const std::wstring& prompt)
 	std::wcout << generatedTxt << '\n';
 }
 
-void MarkovSide::SaveToFile()
-{
-}
-
 void MarkovSide::LoadFile(const std::string& fileName)
 {
 }
@@ -123,25 +119,4 @@ void MarkovSide::CreateChain()
 		curr.clear();
 		next.clear();
 	}
-	/*for (auto& [key, val] : dict)
-	{
-		for (auto& [k, v] : val)
-		{
-			v /= dict.at(key).size();
-		}
-	}*/
-
-	//output the whole dict
-	for (auto const& [key, val] : dict)
-	{
-		for (auto const& [k, v] : val)
-		{
-			//std::wcout << key << L" : " << k << L" - " << v << '\n';
-		}
-	}
-}
-
-std::string MarkovSide::ChooseWord()
-{
-	return std::string();
 }

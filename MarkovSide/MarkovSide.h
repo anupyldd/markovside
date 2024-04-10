@@ -20,7 +20,6 @@ public:
 
 	void Generate(unsigned int length);
 	void GenerateFrom(unsigned int length, const std::wstring& prompt);
-	void SaveToFile();
 	void LoadFile(const std::string& fileName);	// loads in a new file to replace current
 	void SetNGram(unsigned int inNGram);
 
@@ -29,7 +28,6 @@ private:
 	void ReadFile(const std::string& fileName);
 	void CleanText();
 	void CreateChain();
-	std::string ChooseWord();
 
 private:
 
